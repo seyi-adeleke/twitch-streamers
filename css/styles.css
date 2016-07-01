@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+}
+#twitch-table{
+    border: 2px solid whitesmoke;
+}
+hr{
+    padding-top: 1px;
+    margin-top: -5px;
+}
+#main-title{
+    text-align:center;
+    color: #888888;
+}
+#buttons-wrapper{
+    text-align: center;
+}
+.button{
+   color: white;
+}
+#online-button{
+    background-color: lightgreen;
+}
+#offline-button{
+    background-color: red;
+}
+#all-button{
+    background-color: rebeccapurple;
+}
+.fa-twitch{
+    color: rebeccapurple;
+}
+.fa-twitch:hover{
+    color: #888888;;
+}
+#online{
+    background:  lightgreen;
+}
+#offline{
+    background-color: red;
+}
+#online-logo{
+
+}
