@@ -1,44 +1,75 @@
 body{
     background-color: white;
+    font-size: large;
 }
 #twitch-table{
-    border: 2px solid whitesmoke;
+    border: 1px solid grey;
+}
+#twitch-table h1{
+    color: #888888;
 }
 hr{
     padding-top: 1px;
-    margin-top: -5px;
+    margin-top: 5px;
 }
-#main-title{
-    text-align:center;
-    color: #888888;
-}
-#buttons-wrapper{
-    text-align: center;
-}
-.button{
-   color: white;
-}
-#online-button{
-    background-color: lightgreen;
-}
-#offline-button{
-    background-color: red;
-}
-#all-button{
-    background-color: rebeccapurple;
-}
+
 .fa-twitch{
     color: rebeccapurple;
 }
 .fa-twitch:hover{
     color: #888888;;
 }
-#online{
-    background:  lightgreen;
-}
-#offline{
-    background-color: red;
-}
-#online-logo{
 
+#all-btn{
+    background-color: rebeccapurple;
+    color: white;
+
+}
+#online-btn{
+    background-color: green;
+    color: white;
+}
+#offline-btn{
+   background-color: red;
+    color: white;
+}
+
+.offline-well{
+    background-color: red;
+    color: white;
+    border: 2px solid grey;
+    margin-bottom: 4px;
+
+}
+a{
+    color:white;
+}
+img{
+    float: left;
+    width:40px;
+    height: 40px;
+    border:2px solid grey;
+}
+
+.online-well{
+    background-color:green;
+    color: white;
+    border: 2px solid grey;
+    margin-bottom: 4px;
+}
+.deleted-well{
+    background-color:darkgray;
+    color: white;
+    border: 2px solid grey;
+    margin-bottom: 4px;
+}
+#streamers{
+    width: 75%;
+    margin: 0 auto;
+}
+@media all and (max-width: 700px)
+{
+   #twitch-table h1{
+       font-size:large;
+    }
 }
