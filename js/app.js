@@ -33,7 +33,7 @@ $(document).ready(function(){
             console.log(url + " " + "is online");
             $("#online").append("<div class=\"online-well well container-fluid\">"+"<img  class=img-circle src="+ data.stream.channel.logo +">"+"<p>"+"<a target='_blank' href="+
                 data.stream.channel.url + ">" + data["stream"]._links["self"].substr(37)+": "+
-                data.stream.game + "("+data.stream.viewers +" viewers"+")"+"</a>"+"</p>"+"</div>");
+                data.stream.game +" "+"("+data.stream.viewers+"<i class='fa fa-eye'></i>"+")"+"</a>"+"</p>"+"</div>");
 
         };
 
