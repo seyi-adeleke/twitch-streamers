@@ -6,7 +6,7 @@ $(document).ready(function(){
         ["ESL_SC2","OgamingSC2","cretetion","freecodecamp","storbeck","habathcx","RobotCaleb","noobs2ninjas","brunofin","comster404"];
 
     var twitchCallBack= function(){
-        var url ="https://api.twitch.tv/kraken/streams/" + streamers[i] + "?callback=?";
+        var url ="https://api.twitch.tv/kraken/streams/" + streamers[i] +"?client_id=7slsxf0da18e4dn8rou1dw1ji1oxsca";
         $.ajax({
             url:url,
             dataType:'jsonp',
@@ -38,7 +38,7 @@ $(document).ready(function(){
         };
 
         var updateOffline = function(data) {
-            var offlineUrl = data._links.channel;
+            var offlineUrl = data._links.channel+"?client_id=7slsxf0da18e4dn8rou1dw1ji1oxsca";
             $.ajax({
                 url:offlineUrl,
                 dataType:"jsonp",
@@ -66,25 +66,25 @@ $(document).ready(function(){
     };
     // loop through users
     for (var i = 0; i < streamers.length; i++){
-         twitchCallBack()
-        }
+        twitchCallBack()
+    }
 
     $("#all-btn").click(function(){
-            $("#online").show(1000);
-            $("#offline").show(1000);
-            $("#deleted-user").show(1000);
-        });
+        $("#online").show(1000);
+        $("#offline").show(1000);
+        $("#deleted-user").show(1000);
+    });
 
     $("#offline-btn").click(function(){
-            $("#online").hide(1000);
-            $("#deleted-user").hide(1000);
-            $("#offline").show(1000);
-        });
+        $("#online").hide(1000);
+        $("#deleted-user").hide(1000);
+        $("#offline").show(1000);
+    });
 
     $("#online-btn").click(function(){
-            $("#offline").hide(1000);
-            $("#deleted-user").hide(1000);
-            $("#online").show(1000);
-         });
+        $("#offline").hide(1000);
+        $("#deleted-user").hide(1000);
+        $("#online").show(1000);
     });
+});
 
